@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3e3e42;
+}
+
+.container{
+    background-color: rgb(173, 173, 173);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    margin: 40px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 1%;
+}
+
+.description{
+    margin-left: 30px;
+    padding: 0;
+}
+#img{
+    height: 550px;
+    width: 400px;
+    border-radius: 5%;
+} 
+
+#book-name{
+    font-size: 55px;
+    
+    color: rgb(253, 253, 253);
+}
+
+#book-author{
+    font-size: 20px;
+    padding: 0 0 40px 0 ;
+}
+
+#cart-btn{
+    height: 70px;
+    width: 200px;
+    background-color: red;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+#share-btn{
+    height: 70px;
+    width: 50px;
+    border: none;
+    border-radius: 40%;
+}
