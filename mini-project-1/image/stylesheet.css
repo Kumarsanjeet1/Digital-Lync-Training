@@ -26,13 +26,22 @@ body{
 
 #book-name{
     font-size: 55px;
-    
+    font-weight: bold;
     color: rgb(253, 253, 253);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #book-author{
     font-size: 20px;
     padding: 0 0 40px 0 ;
+    color: aliceblue;
+}
+
+#price{
+    color:aliceblue;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 #cart-btn{
@@ -41,11 +50,19 @@ body{
     background-color: red;
     padding: 20px;
     border-radius: 10%;
+    cursor: pointer;
 }
 
 #share-btn{
-    height: 70px;
-    width: 50px;
+    height: 65px;
+    width: 65px;
+    
+    border-radius: 45%;
+    background-color: red;
+    cursor: pointer;
+}
+#share-logo{
+    height: 60px;
     border: none;
-    border-radius: 40%;
+    border-radius: 45% ;
 }
