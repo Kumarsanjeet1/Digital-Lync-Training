@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Last Logged In: <span id="lastLoggedIn"></span></p>
+    
+    <script>
+
+        var arr = [45, 34, 23, 15, 56];
+
+        function sortNumbers() {
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr.length; j++) {
+                    if (arr[i] < arr[j]) {
+                        temp = arr[j];
+                        arr[j] = arr[i];
+                        arr[i] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+
+        var result = sortNumbers();
+
+        console.log(result);
+
+        arr.push(70);
+
+        arr.push(67);
+
+        console.log(arr);
+
+        arr.pop();
+
+        console.log(arr);
+
+        arr.splice(1, 1);
+
+        console.log(arr);
+
+        arr.splice(1, 1, 88, 90);
+
+        console.log(arr);
+
+        console.log(arr.concat([56, 89, 34, 23]));
+
+        console.log(arr.sort().reverse());
+
+        console.log(arr.indexOf(560));
+
+        console.log(arr.includes(45));
+
+
+        var arr2 = Array.of(89, 78, 90);
+
+        console.log(arr2);
+
+        var dateObj = new Date();
+
+        console.log(dateObj.getDate());
+        console.log(dateObj.getMonth());
+
+        console.log(dateObj.getFullYear());
+
+        dateObj.setFullYear(2024);
+
+        console.log(dateObj);
+
+        var lastLoggedIn = `${appendZero(dateObj.getDate())}-${appendZero(dateObj.getMonth() + 1)}-${dateObj.getFullYear()} ${appendZero(dateObj.getHours())}:${appendZero(dateObj.getMinutes())}:${appendZero(dateObj.getSeconds())}`
+
+        document.getElementById('lastLoggedIn').innerHTML = lastLoggedIn;
+
+
+        function appendZero(value) {
+            if (value.toString().length === 1) {
+                return '0' + value;
+            } else {
+                return value;
+            }
+        }
+
+    </script>
+
+</body>
+</html>

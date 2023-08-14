@@ -1,0 +1,84 @@
+Conditional Statements:
+
+Conditional statements are used to decide the flow of execution based on different conditions. If a condition is true, you can perform one action and if the condition is false, you can perform another action.
+
+1. If else
+2. Switch
+
+If else:
+
+    Syntax:
+
+        if (condition) {
+            // Different action statements
+        } else {
+            // Different action statements
+        }
+
+        if condition is true, source code present in if block will be executed.
+        if condition is false, source code present in else block will be executed.
+
+        if (condition) {
+            // Different action statements
+        } else if (condition) {
+            // Different action statements
+        } else if (condition) {
+            // Different action statements
+        } else {
+            // Different action statements
+        }
+
+    Users: Array of Objects
+
+        Sort
+
+            Ascending 
+
+            Descending
+
+    Food Items: Array of Objects:
+
+        name
+
+        price
+
+        rating
+
+        Sort:
+
+            Ascending
+
+            Descending 
+
+            Parameter
+
+Switch:
+
+    > When we have more no of conditions, we need to go for switch rather than if else
+    Syntax:
+
+        switch(condition) {
+            case value1: {
+
+                break;
+            }
+            case value2: {
+                break;
+            }
+            case value3: {
+
+                break;
+            }
+            case value4: {
+
+                break;
+            }
+            default: {
+
+            }
+        }
+
+        break - Used to come out of switch condition.
+
+> Since we are adding break, at a time only one case will be executed.
+> If none of the cases are matching, it will execute the source code which is present in default block.

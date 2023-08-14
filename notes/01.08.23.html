@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="collection">
+        <p>The useSearchParams hook is used to read and modify the query string in the URL for the current location. </p>
+        <p>The useSearchParams hook is used to read and modify the query string in the URL for the current location. </p>
+        <p>The useSearchParams hook is used to read and modify the query string in the URL for the current location. </p>
+        <p>The useSearchParams hook is used to read and modify the query string in the URL for the current location. </p>
+        <p>The useSearchParams hook is used to read and modify the query string in the URL for the current location. </p>
+        <p>The useSearchParams hook is used to read and modify the query string in the URL for the current location. </p>
+        <p>The useSearchParams hook is used to read and modify the query string in the URL for the current location. </p>
+        <p>The useSearchParams hook is used to read and modify the query string in the URL for the current location. </p>
+    </div>
+
+    <button onclick="deletePTags()">Delete All P tags</button>
+
+    <script>
+
+        var i = 0;
+
+        while(i < 0) {
+            console.log(i);
+            i++;
+        }
+        
+        var j = 0;
+
+        do  {
+            console.log('J: ', j);
+            j++;
+        } while(j < 0);
+
+        var div = document.getElementById('collection');
+
+        console.log(div.childNodes);
+
+        function deletePTags() {
+            var div = document.getElementById('collection');
+
+            console.log(div.lastChild);
+
+            while(div.lastChild) {
+                div.removeChild(collection.firstChild);
+            }
+
+            console.log(div.lastChild);
+        }
+
+        var movie = {
+            name: 'Baby (2023)',
+            censorCertificate: 'UA',
+            language: 'Telugu',
+            imgSrc: 'https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICA2NS44SyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00363274-yjxvbzhdbc-portrait.jpg',
+            avgRating: 7.9,
+            votes: 33489
+        };
+
+        var eMovie = Object.assign({}, movie);
+
+        var fMovie = {...movie, ...eMovie, ticketPrice: 300};
+
+        console.log(fMovie);
+
+        for (var key in movie) {
+            console.log(key.toUpperCase() + ': ' + movie[key]);
+        }
+
+        var filteredMovies = [
+            {
+                name: 'BRO',
+                censorCertificate: 'U',
+                language: 'Telugu',
+                imgSrc: 'https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICA2OC41SyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00360172-ncsbpawyxm-portrait.jpg',
+                avgRating: 8.7,
+                votes: 68500
+            },
+            {
+                name: 'Rocky Aur Rani Kii Prem Kahaani',
+                censorCertificate: 'UA',
+                language: 'Hindi',
+                imgSrc: 'https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny45LzEwICAzMy40SyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00312549-wkyfjfxhez-portrait.jpg',
+                avgRating: 7.9,
+                votes: 33489
+            },
+            {
+                name: 'Baby (2023)',
+                censorCertificate: 'UA',
+                language: 'Telugu',
+                imgSrc: 'https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICA2NS44SyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00363274-yjxvbzhdbc-portrait.jpg',
+                avgRating: 7.9,
+                votes: 33489
+            },
+            {
+                name: 'Rocky Aur Rani Kii Prem Kahaani',
+                censorCertificate: 'UA',
+                language: 'Hindi',
+                imgSrc: 'https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny45LzEwICAzMy40SyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00312549-wkyfjfxhez-portrait.jpg',
+                avgRating: 7.9,
+                votes: 33489
+            }, 
+            {
+                name: 'Baby (2023)',
+                censorCertificate: 'UA',
+                language: 'Telugu',
+                imgSrc: 'https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICA2NS44SyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00363274-yjxvbzhdbc-portrait.jpg',
+                avgRating: 7.9,
+                votes: 33489
+            },
+            {
+                name: 'Rocky Aur Rani Kii Prem Kahaani',
+                censorCertificate: 'UA',
+                language: 'Hindi',
+                imgSrc: 'https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny45LzEwICAzMy40SyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00312549-wkyfjfxhez-portrait.jpg',
+                avgRating: 7.9,
+                votes: 33489
+            }, 
+        ];
+
+        // filteredMovies.forEach(function(movie, index) {
+        //     for (var key in movie) {
+        //         console.log(movie[key]);
+        //     }
+        // });
+
+        for (var movie of filteredMovies) {
+            console.log(movie)
+        }
+
+        var buses = [
+            {
+                name: 'APSRTC - 3542',
+                organization: 'APSRTC'
+            },
+            {
+                name: 'APSRTC - 3658',
+                organization: 'APSRTC'
+            },
+            {
+                name: 'TSRTC - 9933',
+                organization: 'TSRTC'
+            },
+            {
+                name: 'NueGo',
+                organization: 'NueGo'
+            }
+        ];
+
+        var filteredBuses = [];
+        var searchQuery = 'NueGo';
+        for (var i = 0; i < buses.length; i++) {
+            if (buses[i].organization === searchQuery) {
+                filteredBuses.push(buses[i])
+            }
+        }
+
+        console.log(filteredBuses);
+
+    </script>
+</body>
+</html>

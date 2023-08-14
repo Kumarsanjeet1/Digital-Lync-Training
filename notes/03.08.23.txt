@@ -1,0 +1,74 @@
+Array Predefined Functions:
+
+    var arrayName = value;
+
+                    [value1, value2, value3, value4, ...., valueN];
+
+                    Array.of(value1, value2, value3);
+
+    push() - To insert a new element into the array at last index position.
+    pop() - To delete the element from last index position.
+    toString() - It converts array into string format.
+    splice(index, deleteCount, insertElement1, insertElement2, insertElement3, .... insertElementN);
+    concat(secondArray); - Joins more than one array information.
+    sort() - Sorts the data in ascending order.
+    reverse() - It reverses the whole array elements.
+    indexOf(value) - Finds index of an value.
+    includes(value) - Checks whether value present in the array or not.
+
+Swap    
+
+    34  15
+    0   1
+
+    let temp = arr[0]
+    arr[0] = arr[1];
+    arr[1] = temp;
+
+    I/P:
+    [45, 34, 23, 15, 56];
+
+    O/P:
+    [15, 23, 34, 45, 56] 
+
+
+        arr.sort();
+
+
+Date Methods:
+
+    var dateObj = new Date();
+
+        Date() - Its a predefined function construtor;
+
+    '09-08-23'
+
+Getter Methods:
+getDate()
+getDay()
+getMonth()
+getFullYear()
+getHours()
+getMinutes()
+getSeconds()
+
+Setter Methods:
+setDate(value)
+setDay(value)
+setMonth(value)
+setFullYear(value)
+setHours(value)
+setMinutes(value)
+setSeconds(value)
+
+Template Literals:
+
+    'String1' + 'String2' + variableName + 'String3' + variableName
+
+    `String1 String2 ${variableName} String3 ${variableName}`;
+
+
+    15 Min ago
+
+    1 hour ago
+    2 hours ago

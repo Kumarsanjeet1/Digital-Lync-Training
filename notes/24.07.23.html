@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #mobile {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>FullName: <span id="fullName"></span></h2>
+
+    <div id="mobile">
+        <div>
+            <img src="" id="imgSrc"/>
+        </div>
+        <div>
+            <h2 id="name"></h2>
+            <h4 id="price"></h4>
+        </div>
+    </div>
+
+    <script>
+
+        document.getElementById('fullName').innerHTML = 'Dinesh KL';
+
+        console.log('Welcome to Javascript Class');
+
+        // window.alert('Created the user successfully.');
+
+        var price = 8999;
+
+        console.log(typeof price);
+
+        var fullName = 'Frankline';
+
+        console.log(fullName);
+
+        console.log(typeof fullName);
+
+        var isLoggedIn = true;
+
+        console.log(typeof isLoggedIn);
+
+        var address;
+
+        console.log(address);
+
+        var names = ['Ganesh', 'Lokesh', 'Karthik', 'Pradeep'];
+
+        console.log(names[2]);
+
+        var userInfo = {
+            firstName: 'Lokesh',
+            lastName: 'G',
+            email: 'lokeshg@gmail.com',
+            city: 'Hyderabad'
+        };
+
+        console.log(userInfo['firstName'], userInfo['email'], userInfo['city']);
+
+        console.log(userInfo.firstName, userInfo.email);
+
+        var mobile = {
+            name: 'Samsung Galaxy M04 Light Green, 4GB RAM, 64GB Storage | Upto 8GB RAM with RAM Plus | MediaTek Helio P35 Octa-core Processor | 5000 mAh Battery | 13MP Dual Camera',
+            imgSrc: 'https://m.media-amazon.com/images/I/41IcuNkyrdL._SX300_SY300_QL70_FMwebp_.jpg',
+            price: 8499,
+            specifications: {
+                brand: 'Samsung',
+                modelName: 'Samsung M04',
+                networkServiceProvider: 'Unlocked for All Carriers',
+                operatingSystem: 'Android 12.0'
+            }
+        };
+
+        document.getElementById('imgSrc').src = mobile.imgSrc;
+        document.getElementById('name').innerHTML = mobile.name;
+        document.getElementById('price').innerHTML = mobile.price;
+
+        var bestSellerSmartPhones = [
+            {
+                name: 'Samsung Galaxy M04 Light Green, 4GB RAM, 64GB Storage | Upto 8GB RAM with RAM Plus | MediaTek Helio P35 Octa-core Processor | 5000 mAh Battery | 13MP Dual Camera',
+                imgSrc: 'https://m.media-amazon.com/images/I/41IcuNkyrdL._SX300_SY300_QL70_FMwebp_.jpg',
+                price: 8499,
+                specifications: {
+                    brand: 'Samsung',
+                    modelName: 'Samsung M04',
+                    networkServiceProvider: 'Unlocked for All Carriers',
+                    operatingSystem: 'Android 12.0'
+                }
+            },
+            {
+                name: 'Samsung Galaxy M04 Light Green, 4GB RAM, 64GB Storage | Upto 8GB RAM with RAM Plus | MediaTek Helio P35 Octa-core Processor | 5000 mAh Battery | 13MP Dual Camera',
+                imgSrc: 'https://m.media-amazon.com/images/I/41IcuNkyrdL._SX300_SY300_QL70_FMwebp_.jpg',
+                price: 8499,
+                specifications: {
+                    brand: 'Samsung',
+                    modelName: 'Samsung M04',
+                    networkServiceProvider: 'Unlocked for All Carriers',
+                    operatingSystem: 'Android 12.0'
+                }
+            },
+            {
+                name: 'Samsung Galaxy M04 Light Green, 4GB RAM, 64GB Storage | Upto 8GB RAM with RAM Plus | MediaTek Helio P35 Octa-core Processor | 5000 mAh Battery | 13MP Dual Camera',
+                imgSrc: 'https://m.media-amazon.com/images/I/41IcuNkyrdL._SX300_SY300_QL70_FMwebp_.jpg',
+                price: 8499,
+                specifications: {
+                    brand: 'Samsung',
+                    modelName: 'Samsung M04',
+                    networkServiceProvider: 'Unlocked for All Carriers',
+                    operatingSystem: 'Android 12.0'
+                }
+            }
+        ]
+
+
+    </script>
+</body>
+</html>

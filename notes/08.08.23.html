@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1135b32737.js" crossorigin="anonymous"></script>
+    <style>
+        img {
+            width: 250px;
+        }
+        .product {
+            display: flex;
+            border-bottom: 1px solid black;
+            padding: 20px;
+        }
+        .product h3 {
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .product h4 {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .img-container {
+
+        }
+        .text-container {
+
+        }
+        i {
+            color: rgb(255,164,28);
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <p class="username"></p>
+        <p class="username"></p>
+        <p class="username"></p>
+        <p class="username"></p>
+        <p class="username"></p>
+    </div> -->
+
+    <div id="products">
+        <div>
+            <div>
+                <img src="" />
+            </div>
+            <div>
+                <h3></h3>
+                <h4></h4>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // var users = ['Jayesh', 'Karthik', 'Pradeep', 'Charan', 'Yashwanth'];
+
+        // var result = document.getElementsByClassName('username');
+        // var result = document.querySelectorAll('.username')
+        // var result = document.getElementsByTagName('p');
+
+        // console.log(result);
+
+        // for (var i = 0; i < result.length; i++) {
+        //     result[i].innerHTML = 'Username: ' + users[i];
+        // }
+
+        // console.log(document.querySelector('.username').parentNode);
+
+        var products = [
+            {
+                imgSrc: 'https://m.media-amazon.com/images/I/71QRSlefkvL._AC_UY327_FMwebp_QL65_.jpg',
+                name: 'HP Laptop 14s, 12th Gen Intel Core i5-1235U, 14-inch (35.6 cm), FHD, 16GB DDR4, 512GB SSD, Intel Iris Xᵉ graphics',
+                price: 58990,
+                rating: 4,
+            },
+            {
+                imgSrc: 'https://m.media-amazon.com/images/I/71lm64Z31JL._AC_UY327_FMwebp_QL65_.jpg',
+                name: 'HP [SmartChoice] 15s, Ryzen 5-5500U, 16GB RAM/512GB SSD 15.6"(39.6 cm) FHD, Micro-Edge',
+                price: 44499,
+                rating: 3,
+            },
+            {
+                imgSrc: 'https://m.media-amazon.com/images/I/51rEPuvNYFL._AC_UY327_FMwebp_QL65_.jpg',
+                name: 'Dell G15 5520 Gaming Laptop, Intel i5-12500H,16GB DDR5,512GB SSD,NVIDIA RTX 3050 ',
+                price: 72990,
+                rating: 5,
+            },
+            {
+                imgSrc: 'https://m.media-amazon.com/images/I/7181raNEn1L._AC_UY327_FMwebp_QL65_.jpg',
+                name: 'HP Victus [Smart Choice }Gaming Laptop 12th Gen Intel Core i5-12450H 15.6" FHD IPS',
+                price: 68990,
+                rating: 3,
+            },
+            {
+                imgSrc: 'https://m.media-amazon.com/images/I/519nIYKiD7L._AC_UY327_FMwebp_QL65_.jpg',
+                name: 'Lenovo IdeaPad Slim AMD 3 Ryzen 5 5500U 15.6" (39.62cm) IPS FHD Laptop ',
+                price: 43990,
+                rating: 4,
+            },
+            {
+                imgSrc: 'https://m.media-amazon.com/images/I/71QRSlefkvL._AC_UY327_FMwebp_QL65_.jpg',
+                name: 'HP Laptop 14s, 12th Gen Intel Core i5-1235U, 14-inch (35.6 cm), FHD, 16GB DDR4, 512GB SSD, Intel Iris Xᵉ graphics',
+                price: 58990,
+                rating: 4,
+            },
+            {
+                imgSrc: 'https://m.media-amazon.com/images/I/71lm64Z31JL._AC_UY327_FMwebp_QL65_.jpg',
+                name: 'HP [SmartChoice] 15s, Ryzen 5-5500U, 16GB RAM/512GB SSD 15.6"(39.6 cm) FHD, Micro-Edge',
+                price: 44499,
+                rating: 5,
+            },
+            {
+                imgSrc: 'https://m.media-amazon.com/images/I/51rEPuvNYFL._AC_UY327_FMwebp_QL65_.jpg',
+                name: 'Dell G15 5520 Gaming Laptop, Intel i5-12500H,16GB DDR5,512GB SSD,NVIDIA RTX 3050 ',
+                price: 72990,
+                rating: 4,
+            },
+            {
+                imgSrc: 'https://m.media-amazon.com/images/I/7181raNEn1L._AC_UY327_FMwebp_QL65_.jpg',
+                name: 'HP Victus [Smart Choice }Gaming Laptop 12th Gen Intel Core i5-12450H 15.6" FHD IPS',
+                price: 68990,
+                rating: 2,
+            },
+            {
+                imgSrc: 'https://m.media-amazon.com/images/I/519nIYKiD7L._AC_UY327_FMwebp_QL65_.jpg',
+                name: 'Lenovo IdeaPad Slim AMD 3 Ryzen 5 5500U 15.6" (39.62cm) IPS FHD Laptop ',
+                price: 43990,
+                rating: 3,
+            }
+        ];
+
+        var productsTag = document.getElementById('products');
+        for (var i = 0; i < products.length; i++) {
+            // Product Container
+            var div1 = document.createElement('div');
+            
+            // Add Class to Product Container Div
+            div1.classList.add('product');
+            
+            // Image Container
+            var div2 = document.createElement('div');
+            
+            // Creation of Image Tag
+            var img = document.createElement('img');
+            img.setAttribute('src', products[i].imgSrc);
+            
+            // Append Children elements to Parent
+            div2.appendChild(img);
+            div1.appendChild(div2);
+            productsTag.appendChild(div1);
+
+            // Title and Price Container
+            var div3 = document.createElement('div');
+            var textNode1 = document.createTextNode(products[i].name);
+            var textNode2 = document.createTextNode(products[i].price);
+            
+            // Creation of Name
+            var h3 = document.createElement('h3');
+            h3.appendChild(textNode1);
+            div3.appendChild(h3);
+
+            for (var j = 0; j < products[i].rating; j++) {
+                var div4 = document.createElement('div4');
+                var ia = document.createElement('i');
+                ia.classList.add('fa-solid', 'fa-star');
+                div4.appendChild(ia);
+                div3.appendChild(div4);
+            }
+
+            for (var k = products[i].rating; k < 5; k++) {
+                var div4 = document.createElement('div4');
+                var ia = document.createElement('i');
+                ia.classList.add('fa-regular', 'fa-star');
+                div4.appendChild(ia);
+                div3.appendChild(div4);
+            }
+
+            // Create of Price
+            var h4 = document.createElement('h4');
+            h4.appendChild(textNode2);
+            div3.appendChild(h4);
+
+            div1.appendChild(div3);
+        }
+
+
+    </script>
+
+</body>
+</html>

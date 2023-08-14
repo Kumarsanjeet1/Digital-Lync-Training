@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Filters: </label>
+        <!-- <select onchange="filterUsers()" id="filterOperation">
+            <option>Select</option>
+            <option>Full Name Low to High</option>
+            <option>Full Name High to Low</option>
+            <option>Age Low to High</option>
+            <option>Age High to Low</option>
+        </select> -->
+        <div>
+            <input type="radio" id="filterOperation1" name="filterOperation" checked/>Full Name Low to High
+        </div>
+        <div>
+            <input type="radio" id="filterOperation2" name="filterOperation"/>Full Name High to Low
+        </div>
+        <div>
+            <input type="radio" id="filterOperation3" name="filterOperation"/>Age Low to High
+        </div>
+        <div>
+            <input type="radio" id="filterOperation4" name="filterOperation"/>Age High to Low
+        </div>
+        <button onclick="filterUsers()">Apply</button>
+    </div>
+
+    <script>
+
+        var users = [
+            {
+                fullName: 'Ganesh K',
+                age: 26,
+                createdAt: '26/07/23'
+            },
+            {
+                fullName: 'Charan J',
+                age: 28,
+                createdAt: '23/05/23'
+            },
+            {
+                fullName: 'Dinesh KL',
+                age: 24,
+                createdAt: '23/06/23'
+            },
+            {
+                fullName: 'Lokesh J',
+                age: 20,
+                createdAt: '29/05/23'
+            },
+            {
+                fullName: 'Satish K',
+                age: 30,
+                createdAt: '26/09/23'
+            }
+        ];
+        var sortedUsers = [];
+
+        function sortUsers(direction, param) {
+            if (direction === 'asc') {
+                var data = [...users]; // Spread Operator
+                sortedUsers = data.sort(function(a, b) {
+                    if (a[param] < b[param]) {
+                        return -1;
+                    } else if (a[param] > b[param]) {
+                        return 1;
+                    } else {
+                        return 0;
+                    }
+                });
+            } else {
+                var data = [...users]; // Spread Operator
+                sortedUsers = data.sort(function(a, b) {
+                    if (a[param] < b[param]) {
+                        return 1;
+                    } else if (a[param] > b[param]) {
+                        return -1;
+                    } else {
+                        return 0;
+                    }
+                })
+            }
+        }
+
+        // sortUsers('asc', 'fullName');
+
+        // console.log(sortedUsers);
+
+        // sortUsers('des', 'age');
+
+        // console.log(sortedUsers);
+
+        function filterUsers() {
+            var operation1 = document.getElementById('filterOperation1').checked;
+            var operation2 = document.getElementById('filterOperation2').checked;
+            var operation3 = document.getElementById('filterOperation3').checked;
+            var operation4 = document.getElementById('filterOperation4').checked;
+
+            if (operation1) {
+                sortUsers('asc', 'fullName');
+            } else if (operation2) {
+                sortUsers('desc', 'fullName');
+            } else if (operation3) {
+                sortUsers('asc', 'age');
+            } else {
+                sortUsers('desc', 'age');
+            }
+
+            // For Drop down UI
+            // var operationType = document.getElementById('operationType').value;
+            // if (operationType === 'Full Name Low to High') {
+            //     sortUsers('asc', 'fullName');
+            // } else if (operationType === 'Full Name High to Low') {
+            //     sortUsers('des', 'fullName');
+            // } else if (operationType === 'Age Low to High') {
+            //     sortUsers('asc', 'age');
+            // } else {
+            //     sortUsers('des', 'fullName');
+            // }
+
+            // switch(operationType) {
+            //     case 'Full Name Low to High': {
+            //         sortUsers('asc', 'fullName');
+            //         break;
+            //     } case 'Full Name High to Low': {
+            //         sortUsers('desc', 'fullName');
+            //         break;
+            //     } case 'Age Low to High': {
+            //         sortUsers('asc', 'age');
+            //         break;
+            //     } case 'Age High to Low': {
+            //         sortUsers('desc', 'age');
+            //         break;
+            //     }
+            // }
+            console.log(sortedUsers);
+        }
+
+
+    </script>
+
+
+</body>
+</html>

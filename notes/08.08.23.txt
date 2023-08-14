@@ -1,0 +1,28 @@
+DOM Manipulations:
+
+    document.getElementById(idName) - Element Tag
+
+    HTML Collection: (Array)
+    document.getElementsByClassName(className) - Array of Element Tags.
+
+    document.getElementsByTagName(tagName) - Array of Element Tags.
+
+
+    document.querySelector('tagName/.className/#idName');
+
+        - It returns first occurance of elements.
+
+    Node List: (Array)
+    document.querySelectorAll('tagName/.className/#idName'); - Array of element tags.
+
+Dynamic way of Creating HTML Elements:
+
+    document.createElement(tagName);
+
+For creating text node:
+
+    document.createTextNode(String);
+
+Append child to parent element:
+
+    parentElement.appendChild(childElement);

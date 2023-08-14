@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #resturants {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #resturant {
+            width: 30%;
+            padding: 20px;
+        }
+        #resturant img {
+            width: 300px;
+            border-radius: 20px;
+        }
+        #content {
+            display: flex;
+            width: 100%;
+        }
+        #content > div {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Order food online in Peddamma Temple, Jubilee Hills</h1>
+
+        <div id="resturants">
+            <!-- <div id="resturant">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp" />
+                <div id="content">
+                    <div>
+                        <h3>Cafe Niloufer</h3>
+                        <p>Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food</p>
+                    </div>
+                    <div>
+                        <p>4.4</p>
+                        <p>₹150 for one</p>
+                        <p>38 min</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script>
+        var resturants = [
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/3/90943/ae983bd7dd3098d375f3d4bb15ff8677_o2_featured_v2.jpg?output-format=webp',
+                name: "Udipi's Upahar",
+                description: 'South Indian, North Indian, Chinese, Sandwich, Fast Food, Ice Cream, Beverages, Shake',
+                rating: 4.1,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            },
+            {
+                imgSrc: 'https://b.zmtcdn.com/data/pictures/chains/5/18241275/a1fbd73fc42f760747e78b8526cf0f95_o2_featured_v2.jpg?output-format=webp',
+                name: 'Cafe Niloufer',
+                description: 'Cafe, Tea, Shake, Beverages, Bakery, Sandwich, Pizza, Fast Food',
+                rating: 4.4,
+                price: '₹150 for one',
+                time: '38 min'
+            }
+        ];
+
+        var resturantsDiv = document.getElementById('resturants');
+        for (var i = 0; i < resturants.length; i++) {
+
+            var resturantDiv = document.createElement('div');
+            resturantDiv.setAttribute('id', 'resturant');
+
+            var resturantImg = document.createElement('img');
+
+            resturantImg.setAttribute('src', resturants[i].imgSrc);
+
+            resturantDiv.appendChild(resturantImg);
+
+            resturantsDiv.appendChild(resturantDiv);
+
+            var contentDiv = document.createElement('div');
+            contentDiv.setAttribute('id', 'content');
+
+            var leftSideDiv = document.createElement('div');
+
+            var resturantNameh3 = document.createElement('h3');
+            var resturantNameText = document.createTextNode(resturants[i].name);
+            resturantNameh3.appendChild(resturantNameText);
+            leftSideDiv.appendChild(resturantNameh3);
+
+            var descriptionPara = document.createElement('p');
+            var descriptionText = document.createTextNode(resturants[i].description);
+            descriptionPara.appendChild(descriptionText);
+            leftSideDiv.appendChild(descriptionPara);
+
+            contentDiv.appendChild(leftSideDiv);
+
+            var rightSideDiv = document.createElement('div');
+
+            for (let key in resturants[i]) {
+                if (['rating', 'price', 'time'].indexOf(key) !== -1) {
+                    var para = document.createElement('p');
+                    var textNode = document.createTextNode(resturants[i][key]);
+                    para.appendChild(textNode);
+                    rightSideDiv.appendChild(para);
+                }
+            }
+            
+            contentDiv.appendChild(rightSideDiv);
+
+            resturantDiv.appendChild(contentDiv);
+
+        }
+
+
+    </script>
+</body>
+</html>

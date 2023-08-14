@@ -1,0 +1,73 @@
+Operators:
+
+1. Arithematic Operators
+    + - Addition
+    - - Subtraction
+    * - Multiplication
+    % - Modulus
+    ++ - Increment
+    -- - Decrement
+2. Assignment Operators
+    = - Equal to (It maps value present on the right side to left side reference/variable)
+    += 
+    -=
+    *=
+    /=
+    %=
+
+3. Comparison Operators
+    == - Double equal to (Compares left side value with right side value, if both are same it return true else it returns false)
+    === - Triple equal to (Compares left side value and data type with right side value and data type, if both are same it return true else it returns false)
+    != - Not Equal (If both values are not matching, it returns true otherwise false)
+    !== - Not Double Equal (If both values and data types are not matching, it returns true otherwise false)
+    < 
+    >
+    <=
+    >=
+    ? - Ternary Operator
+4. Logical Operators
+
+    && - Logical AND - If both the expression are true, it returns true. If any of the expression is false, it returns false.
+    || - Logical OR - If any of the expression is true, it return true, if both the expressions are false, it returns false.
+    ! - Logical NOT
+
+    Increment: Using this we can increment the value by 1.
+
+        Syntax:
+            variableName++; // variableName = variableName + 1;
+
+    Decrement: Using this we can decrement the value by 1.
+
+        Syntax:
+
+            variableName--; // variableName = variableName - 1;
+
+    var arr = [10, 20, 30]; 
+
+                0   1   2
+
+Note: For iterating the array values, we can use increment operator.
+
+Ternary Operator:
+
+    Syntax:
+
+        condition ? statement1 : statement2;
+
+        If condition is true, statement1 will be executed.
+        If condition is false, statement2 will be executed.
+
+
+Logical AND:
+Expression1     Expression2     Resultant
+True            True            True
+True            False           False
+False           False           False
+False           False           False
+
+Logical OR:
+Expression1     Expression2     Resultant
+True            True            True
+True            False           True
+False           False           True
+False           False           False

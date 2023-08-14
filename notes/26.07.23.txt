@@ -1,0 +1,37 @@
+Function: Function is a block of source code. 
+> It is used to reuse the block of source code for multiple times.
+
+    Syntax:
+
+        function functionName(argument1, argument2, ....argumentN) {
+            // Block of Source code...
+
+            return returnValue;
+        } - Function Definition
+
+        functionName(value1, value2, ..., valueN) -> Function Call
+
+        functionName(value1, value2, ..., valueN) -> Function Call
+
+        functionName(value1, value2, ..., valueN) -> Function Call
+
+> Return keyword is used to return the value from the function definition to function cal.
+
+document.getElementById(id)
+
+Events: User interactions to the app is called events.
+onclick
+onchange
+onblur
+onkeyup
+onsubmit
+
+Task:
+
+    Design some login form:
+
+        username
+
+        password
+
+        button

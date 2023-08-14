@@ -1,0 +1,65 @@
+Control Statements: Control flow statements are used to control the flow of execution in a program.
+
+1. while: When we don't the exact no of iterations, we can go for while
+
+    > If condition is true, it executes the statements until the condition false.
+    > But if condition is becoming false for every scenario, it doesn't execute any statements present in it.
+
+        Syntax:
+
+            while(condition) {
+                // Statements
+            }
+
+2. do while: When we don't the exact no of iterations, we can go for do while.
+
+    > If condition is true, it executes the statements until the condition false.
+    > But if condition is becoming false for every scenario, it executes the statements present in it for one time.
+
+        Syntax:
+
+            do {    
+                // Statements
+            } while(condition);
+3. for
+
+    Syntax:
+
+        for (initialization; condition; increment/decrement) {
+            // Statements...
+        }
+
+ES6
+
+for each:
+
+    arrayName.forEach(function(value, index) {
+        // Statements...
+    });
+
+for in : It is used to iterate through key value pair present in object.
+
+    Syntax:
+
+        for (var key in object) {
+            // Statements...
+        }
+
+for of:
+
+    for (var value of arrayName) {
+        // Statements...
+    }
+
+Syntax:
+
+    List of Buses: [] = 10
+
+        tsrtc - 5
+
+        apstrc - 3
+
+        NueGo - 2
+
+
+        apstrc buses - 3

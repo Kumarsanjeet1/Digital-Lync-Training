@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: "Montserrat", sans-serif;
+}
+.container{
+    padding: 15px 15px;    
+}
+
+#dento-nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: .5em 5em;
+    flex-direction: row;
+}
+
+#dento-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+#dento-nav ul li,a{
+    padding-right:  1em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.8sem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+
+
+#dento-nav ul li:hover{
+    color: #00AEEF;
+    transition: .4s;
+}
+
+
+
+
+.btn button{
+    width: 150px;
+    height: 40px;
+    font-size: 0.8em;
+    background-color: #00AEEF;
+    color: #fff;
+    border: 2px #00AEEF solid;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+
+#dento-nav button:hover{
+    background-color: #fff;
+    border: 2px #00AEEF solid;
+    color: #00AEEF;
+    transition: .7s;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    font-size: 0.8em;
+}
+
+
+
+
+/* Welcome page */
+
+.welcome-container{
+    background-image: url(https://preview.colorlib.com/theme/dento/img/bg-img/7.jpg.webp);
+    background-attachment:fixed;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.welcome-content{
+    background-color: #031b47b4;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    position: relative;
+}
+
+
+.welcome-page-great{
+    font-size: 2em;
+    text-align: center;
+    padding: 0 4em;
+    padding-top: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 120px;
+}
+
+.welcome-page-desc{
+    font-size: 1.5em;   
+    text-align: center;
+    padding: 0 5em;
+    position: absolute;
+    top: 420px;
+}
+
+#btn-get-started{
+    width: 200px;
+    height: 45px;
+    font-size: 1em;
+    background-color: #00AEEF;
+    color: #fff;
+    border: 2px #00AEEF solid;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+    position: absolute;
+    top: 510px;
+    left: 400px;
+    text-transform: capitalize;
+}
+
+#btn-get-started:hover{
+    width: 200px;
+    height: 45px;
+    font-size: 1em;
+    background-color: transparent;
+    transition: .7s;
+    color: #fff;
+    border: 2px #00AEEF solid;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+    position: absolute;
+    top: 510px;
+    left: 400px;
+    text-transform: capitalize;
+}
+
+
+#btn-contact-us{
+    width: 200px;
+    height: 45px;
+    font-size: 1em;
+    background-color: transparent;
+    color: #fff;
+    border: 2px #00AEEF solid;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+    position: absolute;
+    top: 510px;
+    left: 700px;
+    text-transform: capitalize;
+}
+
+/*------------------------------About Section -------------------------*/
+.container-2 {
+    height: 80vh;
+    padding: 5% 5% 10% 5%;
+}
+.entire-section{
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#about-image{
+    height: auto;
+    width: 521px;
+    align-items: center;
+    
+}
+
+/*---------------- Right section content------------- */
+.right-section-abt {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding: 5em 0 3em 2em;
+}
+
+.abt {
+    font-size: 2.5em;
+    font-family: monospace;
+    text-transform: capitalize;
+}
+
+hr#abt-line {
+    width: 13%;
+    border: none;
+    background-color: #00ADEE;
+    height: 5px;
+}
+
+.abt-paragraph {
+    font-size: 1.2em;
+    font-family: math;
+}
+
+.abt-infrastructure {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.abt-infrastructure-heading{
+    display: flex;
+    flex-direction:row;
+    column-gap: 50%;
+}
+
+.abt-infrastructure h3{
+    font-size: 1.5em;
+    width: 40%;    
+}
+
+.blank-bar{
+    width: 100%;
+    background-color: grey;
+}
+
+#exp-dentist-bar{
+    width: 80%;
+    height: 12px;
+    color: #00ADEE;
+    background-color: #00ADEE;
+}
+
+#mordern-bar{
+    width: 65%;
+    height: 12px;
+    color: #00ADEE;
+    background-color: #00ADEE;
+}
+
+#friendly-bar{
+    width: 85%;
+    height: 12px;
+    color: #00ADEE;
+    background-color: #00ADEE;
+}
+
+.container-3{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 350px;
+    font-size: 3em;
+    color: #00ADEE;
+    
+}
+
+.review{
+    display: flex;
+    padding-top: 70px;
+    flex-direction: column;
+    gap: 20px;
+}
+.review h3{
+    color: rgb(47, 44, 44);
+    font-size: 0.8em;
+}
+
+.review p{
+    color: rgb(61, 55, 55);
+    font-weight: 600;
+    font-size: 20px;
+       
+}
+
+
+/* -----------Container 4--------------- */
+.container-4{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+i.fa-solid.fa-play {
+    font-size: 2em;
+    color: #FFF;
+}
+#playbtn {
+    background-color: #00ADEE;
+    height: 80px;
+    width: 80px;
+    border: none;
+    border-radius: 50%;
+}
+
+.our-service-right-section{
+    position: relative;
+}
+
+.play-btn{
+    position: absolute;
+    top: 50px;
+}
+

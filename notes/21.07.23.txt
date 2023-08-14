@@ -1,0 +1,90 @@
+Programming Language:
+
+    C C++ Java DOT NET PYTHON
+
+    Scripting Language.
+
+PL - Compilation & Execution will happen seperately.
+
+SL - Compilation & Execution will happened at a time.
+
+    Compilation - Complier checks for syntax errors, if there no errors it make the source code available for execution, if errors it display the errors in the console.
+
+    Execution - It executes the source code and returns output to us.
+
+Javascript - Scripting Language.
+
+> Initially it has been introduced for handling validations of the form fields.
+
+> JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
+
+> As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior,[10] often incorporating third-party libraries.
+
+> All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+
+> JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.
+
+    Dedicated Javascript Engines present in every web browsers
+
+    (ECMA Script Standards)
+    > V8 - Chrome
+    > Javascript Core - Safari
+    > Spider Monkey - Mozilla Firefox
+    > Chakra - Microsoft Edge
+
+2 Place of writing javascript source code.
+
+> Internal
+> External
+
+    fileName.js
+
+Output Parameters:
+> console.log(msg)
+> document.getElementById(idName).value = msg;
+> window.alert(msg)
+
+
+Data Types: A particular kind of data item
+
+Predefined Types:
+> Number: It is collection of digits and decimals
+> String: Collection of characters
+> Boolean: true / false
+
+User Defined Types:
+> Array
+> Object
+> Function
+
+Variables: A variable is a value that can change, depending on conditions or on information passed to the program.
+> It is used to temporarily store the data.
+
+    Syntax:
+
+        var variableName = value;
+
+Array: Collection of values.
+
+    Syntax:
+
+        var variableName = [value1, value2, value3, value4, .... valueN];
+                               0        1       2       3         n - 1
+
+            variableName[index];
+
+            variableName[index] = value;
+
+        variableName.length;
+
+Object:
+
+    var variableName = {
+        key1: value1,
+        key2: value2,
+        key3: value3,
+
+
+
+        keyN: valueN
+    }
