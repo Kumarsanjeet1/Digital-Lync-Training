@@ -4,6 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazone-mobile-card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 5px;
+            text-align: center;
+           
+        }
+
+        #container-1 > div{
+            width: 20%;
+            padding: 10px;
+            margin: 10px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 20px gray;
+        }
+
+
+        #container-1 div h2{
+            font-size: 1.2em;
+            text-align: center;
+            font-family: cursive;
+            font-weight: 600;
+        }
+
+        #container-1 div img{
+            height: 200px;
+            text-align: start;
+            
+        }
+        
+        #container-1 div h4{
+            font-size: 0.8em;
+            font-family: cursive;
+            color: rgb(35, 34, 34);
+        }
+
+        #container-1 div h6{
+            font-size: 1.5em;
+            font-family: cursive;
+            
+        }
+
+        
+    </style>
 </head>
 <body>
     <div id="container-1">
@@ -11,35 +67,35 @@
             <h2 id="mobileName-1"></h2>
             <img src="" alt="" id="imgsrc-1">
             <h4 id="specification-1"></h4>
-            <h6 id="price1"></h6>
+            <h6 id="price-1"></h6>
         </div>
 
         <div id="card-container-2">
             <h2 id="mobileName-2"></h2>
             <img src="" alt="" id="imgsrc-2">
             <h4 id="specification-2"></h4>
-            <h6 id="price2"></h6>
+            <h6 id="price-2"></h6>
         </div>
 
         <div id="card-container-3">
             <h2 id="mobileName-3"></h2>
             <img src="" alt="" id="imgsrc-3">
             <h4 id="specification-3"></h4>
-            <h6 id="price3"></h6>
+            <h6 id="price-3"></h6>
         </div>
 
         <div id="card-container-4">
             <h2 id="mobileName-4"></h2>
             <img src="" alt="" id="imgsrc-4">
             <h4 id="specification-4"></h4>
-            <h6 id="price4"></h6>
+            <h6 id="price-4"></h6>
         </div>
 
         <div id="card-container-5">
             <h2 id="mobileName-5"></h2>
             <img src="" alt="" id="imgsrc-5">
             <h4 id="specification-5"></h4>
-            <h6 id="price5"></h6>
+            <h6 id="price-5"></h6>
         </div>
 
     </div>
@@ -83,12 +139,37 @@
 
             },
         ]
+//  Mobile-1
+            document.getElementById('mobileName-1').innerHTML= mobile[0].name;
+            document.getElementById('imgsrc-1').src= mobile[0].image;
+            document.getElementById('specification-1').innerHTML= mobile[0].specification;
+            document.getElementById('price-1').innerHTML= mobile[0].price;
 
-            
+//  Mobile-2
+            document.getElementById('mobileName-2').innerHTML= mobile[1].name;
+            document.getElementById('imgsrc-2').src= mobile[1].image;
+            document.getElementById('specification-2').innerHTML= mobile[1].specification;
+            document.getElementById('price-2').innerHTML= mobile[1].price;
+
+//  Mobile-3
+
+            document.getElementById('mobileName-3').innerHTML= mobile[2].name;
+            document.getElementById('imgsrc-3').src= mobile[2].image;
+            document.getElementById('specification-3').innerHTML= mobile[2].specification;
+            document.getElementById('price-3').innerHTML= mobile[2].price;
+
+//  Mobile-1
+            document.getElementById('mobileName-4').innerHTML= mobile[3].name;
+            document.getElementById('imgsrc-4').src= mobile[3].image;
+            document.getElementById('specification-4').innerHTML= mobile[3].specification;
+            document.getElementById('price-4').innerHTML= mobile[3].price;
 
 
-
-
+//  Mobile-1
+            document.getElementById('mobileName-5').innerHTML= mobile[4].name;
+            document.getElementById('imgsrc-5').src= mobile[4].image;
+            document.getElementById('specification-5').innerHTML= mobile[4].specification;
+            document.getElementById('price-5').innerHTML= mobile[4].price;
 
 
     </script>
