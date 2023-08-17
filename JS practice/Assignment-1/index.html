@@ -3,75 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart Card</title>
+    <title>Red-Bus-card</title>
+    <style>
+        .Card{
+            width: 80%;
+            padding: 30px 50px;
+            box-shadow: 10px;
+            margin: 28px;
+            background-color: aquamarine;
+
+        }
+        .content{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 <body>
-    <div class="card-container">
-        <div id="card1">
-            
-            <div class="navigation">
-
-            </div>
-            <div class="image">
-
-            </div>
-            <div class="product-info">
-
-            </div>
-            <div class="product-price">
-
-            </div>
+    <div class="Card">
+        <div class="content">
+            <h3 id="name1"></h3>
+            <h4 id="busesType1"></h4>
+            <h5 id="departureTime1"></h5>
+            <h5 id="arrivalTime1"></h5>
+            <h6 id="price1"></h6>
         </div>
 
-        <div id="card2">
-            <div class="navigation">
-
-            </div>
-            <div class="image">
-
-            </div>
-            <div class="product-info">
-
-            </div>
-            <div class="product-price">
-
-            </div>
+        <div class="content">
+            <h3 id="name2"></h3>
+            <h4 id="busesType2"></h4>
+            <h5 id="departureTime2"></h5>
+            <h5 id="arrivalTime2"></h5>
+            <h6 id="price2"></h6>
         </div>
 
-        <div id="card3">
-            <div class="navigation">
-
-            </div>
-            <div class="image">
-
-            </div>
-            <div class="product-info">
-
-            </div>
-            <div class="product-price">
-
-            </div>
+        <div class="content">
+            <h3 id="name3"></h3>
+            <h4 id="busesType3"></h4>
+            <h5 id="departureTime3"></h5>
+            <h5 id="arrivalTime3"></h5>
+            <h6 id="price3"></h6>
         </div>
 
-        <div id="card4">
-            <div class="navigation">
-
-            </div>
-            <div class="image">
-
-            </div>
-            <div class="product-info">
-
-            </div>
-            <div class="product-price">
-
-            </div>
+        <div class="content">
+            <h3 id="name4"></h3>
+            <h4 id="busesType4"></h4>
+            <h5 id="departureTime4"></h5>
+            <h5 id="arrivalTime4"></h5>
+            <h6 id="price4"></h6>
         </div>
-    </div>    
 
-    <script>
-        var name=document.getElementsByClassName('').innerHTML="Sanjeet kumar";
-    </script>
+    </div>
     
+    
+    
+    
+    <script>
+
+// var buses = {name:'NeoGo1',
+//              type:'Electric A/C seater (2+2)',
+//              departureTime:'09:00',
+//              arrivalTime:'01:20',
+//              price:'399'}
+
+
+        var buses = [
+                {name1:'NeoGo1',
+                type1:'Electric A/C seater (2+2)',
+                departureTime1:'09:00',
+                arrivalTime1:'01:20',
+                price1:'399'},
+
+
+                {name2:'NeoGo2',
+                type2:'Non-Electric A/C seater (2+2)',
+                departureTime2:'04:00',
+                arrivalTime2:'06:20',
+                price2:'599'},
+
+                {name3:'NeoGo3',
+                type3:'Desel A/C seater (2+2)',
+                departureTime3:'08:00',
+                arrivalTime3:'09:20',
+                price3:'699'},
+
+                {name4:'NeoGo5',
+                type4:'Battery A/C seater (2+2)',
+                departureTime4:'03:00',
+                arrivalTime4:'07:20',
+                price4:'299'}
+        ];
+           
+        // document.getElementById('name1').innerText = buses.name;
+        // document.getElementById('busesType1').innerText = buses.type;
+        // document.getElementById('departureTime1').innerText = buses.departureTime;
+        // document.getElementById('arrivalTime1').innerText = buses.arrivalTime;
+        // document.getElementById('price1').innerText = buses.price;      
+
+        
+        // bus 1 info
+        document.getElementById('name1').innerText = buses[0].name;
+        document.getElementById('busesType1').innerText = buses[0].type;
+        document.getElementById('departureTime1').innerText = buses[0].departureTime;
+        document.getElementById('arrivalTime1').innerText = buses[0].arrivalTime;
+        document.getElementById('price1').innerText = buses[0].price;
+
+
+        // bus 2 info
+        document.getElementById('name2').innerText = buses[1].name;
+        document.getElementById('busesType2').innerText = buses[1].type;
+        document.getElementById('departureTime2').innerText = buses[1].departureTime;
+        document.getElementById('arrivalTime2').innerText = buses[1].arrivalTime;
+        document.getElementById('price2').innerText = buses[1].price;
+
+        // bus 3 info
+        document.getElementById('name3').innerText = buses[2].name;
+        document.getElementById('busesType3').innerText = buses[2].type;
+        document.getElementById('departureTime3').innerText = buses[2].departureTime;
+        document.getElementById('arrivalTime3').innerText = buses[2].arrivalTime;
+        document.getElementById('price3').innerText = buses[2].price;
+
+        // bus 4 info
+        document.getElementById('name4').innerText = buses[3].name;
+        document.getElementById('busesType4').innerText = buses[3].type;
+        document.getElementById('departureTime4').innerText = buses[3].departureTime;
+        document.getElementById('arrivalTime4').innerText = buses[3].arrivalTime;
+        document.getElementById('price4').innerText = buses[3].price;
+
+    </script>
+
 </body>
 </html>
