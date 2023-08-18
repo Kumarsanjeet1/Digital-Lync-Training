@@ -2,7 +2,7 @@
 
 📂  [Assignment-1](https://js-jssignment-1.vercel.app/)
 
-📂  [Assignment-2]()
+📂  [Assignment-2](https://assignment-2-seven-lime.vercel.app/)
 
 📂  [Assignment-3]()
 
