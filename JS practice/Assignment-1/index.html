@@ -5,23 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red-Bus-card</title>
     <style>
-        .Card{
-            width: 80%;
-            padding: 30px 50px;
-            box-shadow: 10px;
-            margin: 28px;
-            background-color: aquamarine;
+        *{
+            margin: 0;
+            padding: 0;
+        }
 
+        .container{
+            display: flex;
+            flex-direction: column;
         }
         .content{
             display: flex;
-            flex-direction:row;
-            justify-content: space-between;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: antiquewhite;
+            padding: 20px;
+            margin: 10px; 
         }
+
+        .content > div{
+            
+            
+        }
+        
+
+        
     </style>
 </head>
 <body>
-    <div class="Card">
+    <div class="container">
         <div class="content">
             <h3 id="name1"></h3>
             <h4 id="busesType1"></h4>
@@ -61,45 +73,35 @@
     
     <script>
 
-// var buses = {name:'NeoGo1',
-//              type:'Electric A/C seater (2+2)',
-//              departureTime:'09:00',
-//              arrivalTime:'01:20',
-//              price:'399'}
+
 
 
         var buses = [
-                {name1:'NeoGo1',
-                type1:'Electric A/C seater (2+2)',
-                departureTime1:'09:00',
-                arrivalTime1:'01:20',
-                price1:'399'},
+                {name:'NeoGo1',
+                type:'Electric A/C seater (2+2)',
+                departureTime:'09:00',
+                arrivalTime:'01:20',
+                price:'399'},
 
 
-                {name2:'NeoGo2',
-                type2:'Non-Electric A/C seater (2+2)',
-                departureTime2:'04:00',
-                arrivalTime2:'06:20',
-                price2:'599'},
+                {name:'NeoGo2',
+                type:'Non-Electric A/C seater (2+2)',
+                departureTime:'04:00',
+                arrivalTime:'06:20',
+                price:'599'},
 
-                {name3:'NeoGo3',
-                type3:'Desel A/C seater (2+2)',
-                departureTime3:'08:00',
-                arrivalTime3:'09:20',
-                price3:'699'},
+                {name:'NeoGo3',
+                type:'Desel A/C seater (2+2)',
+                departureTime:'08:00',
+                arrivalTime:'09:20',
+                price:'699'},
 
-                {name4:'NeoGo5',
-                type4:'Battery A/C seater (2+2)',
-                departureTime4:'03:00',
-                arrivalTime4:'07:20',
-                price4:'299'}
-        ];
-           
-        // document.getElementById('name1').innerText = buses.name;
-        // document.getElementById('busesType1').innerText = buses.type;
-        // document.getElementById('departureTime1').innerText = buses.departureTime;
-        // document.getElementById('arrivalTime1').innerText = buses.arrivalTime;
-        // document.getElementById('price1').innerText = buses.price;      
+                {name:'NeoGo5',
+                type:'Battery A/C seater (2+2)',
+                departureTime:'03:00',
+                arrivalTime:'07:20',
+                price:'299'}
+        ];    
 
         
         // bus 1 info
