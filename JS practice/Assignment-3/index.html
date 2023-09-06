@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>prime video</title>
-    <script src="https://kit.fontawesome.com/9ef9edfa99.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9ef9edfa99.js" crossorigin="anonymous" ></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
     <div class="movie-container">
-        <div class="movie-1">
-            <div class="movie-img">
-                <img src="" alt="" id="movie-img-1">
+        <!-- Movie 1 -->
+        <div class="movie">
+            <img src="" alt="" id="movie-img-1">
+            
+            <div class="available">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h2 id="movie-available-1"></h2>
             </div>
-            <div class="movie-details">
-                <div class="available">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <h2 id="movie-available-1"></h2>
-                </div>
 
+            
+            <div class="movie-details">
                 <div class="movie-heading">
                     <div class="movie-name">
                         <h2 id="movie-name-1"></h2>
                         <div class="btn">
-                            <button id="watchlist-1"></button>
-                            <button id="trailer-1"></button>
+                            <button id="watchlist-1"><i class="fa-solid fa-plus"></i></button>
+                            <button id="trailer-1"><i class="fa-solid fa-film"></i></button>
                         </div>
                     </div>
                 </div>
@@ -34,7 +36,7 @@
                         <p id="release-year-1"></p>
                     </div>
                     <div class="movie-duration"> 
-                        <p id="movie-time-1"></p>
+                        <p id="movie-duration-1"></p>
                     </div>
                     <div class="suitable-ages">
                         <p id="suitable-for-age-1"></p>
@@ -53,6 +55,37 @@
 
 
     <script>
+        const movie= [
+            {
+                image:'https://m.media-amazon.com/images/S/pv-target-images/259024d7421446eb3acef4e8e3461df09ddc1098ef05b15d09d226be279bf208._UR1920,1080_SX480_FMwebp_.jpg',
+                availablity:'Rent',
+                name:'The Bad Guys',
+                releaseYear: '2022',
+                duration: '1h 40min',
+                suitableAge: 'U/A 13+',
+                description: 'After a lifetime of heists, five baddies face their biggest job yet: going good. Nobody has ever failed so hard at trying to be good...'
+
+            },
+            {
+                image:'https://m.media-amazon.com/images/S/pv-target-images/259024d7421446eb3acef4e8e3461df09ddc1098ef05b15d09d226be279bf208._UR1920,1080_SX480_FMwebp_.jpg',
+                availablity:'Rent',
+                name:'The Bad Guys',
+                releaseYear: '2022',
+                duration: '1h 40min',
+                suitableAge: 'U/A 13+',
+                description: 'After a lifetime of heists, five baddies face their biggest job yet: going good. Nobody has ever failed so hard at trying to be good...'
+
+            }
+        ];
+
+        // Movie 1
+        document.getElementById("movie-img-1").src=movie[0].image;
+        document.getElementById("movie-available-1").innerHTML=movie[0].availablity;
+        document.getElementById("release-year-1").innerHTML=movie[0].releaseYear;
+        document.getElementById("movie-duration-1").innerHTML=movie[0].duration;
+        document.getElementById("suitable-for-age-1").innerHTML=movie[0].suitableAge;
+        document.getElementById("movie-description-1").innerHTML=movie[0].description;
+
 
     </script>
     
