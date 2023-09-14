@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding-Two-Number</title>
+</head>
+<body>
+    <div style="box-shadow: 5%; background-color: aqua; height: 250px; width: 250px; padding: 20px; text-align: center;">
+        <div>
+            <label>Number 1</label>
+            <input type="number" name="num1" id="num1">   
+        </div>
+       
+        <div>
+            <label>Number 2</label>
+            <input type="number" name="num2" id="num2">
+        </div>
+        
+        <div>
+            <button onclick="calculationSum()">Add</button>
+            <button onclick="calculationSubtract()">Subtract</button>
+            <button onclick="calculationMultiply()">Multiply</button>
+        </div>
+        
+        <div style="display: flex; align-items: baseline;">
+             <h2>Result:&nbsp;</h2>
+             <h3 id="calculationResult"></h6>
+        </div>
+    </div>
+    
+    <script>
+
+        function calculationSum(){
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var result = num1 + num2;
+            document.getElementById('calculationResult').innerHTML=result;
+        };
+
+        function calculationSubtract(){
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var result = num1 - num2;
+            document.getElementById('calculationResult').innerHTML=result;
+        };
+
+        function calculationMultiply(){
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var result = num1 * num2;
+            document.getElementById('calculationResult').innerHTML=result;
+        };
+
+        
+    </script>
+
+
+</body>
+</html>
