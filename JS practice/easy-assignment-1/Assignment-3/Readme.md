@@ -1,12 +1,4 @@
 # 🔗 Assignment Preview Link ⬇️
 
-## 📁 Easy Assignment-3
 
-
-📂  [Assignment-1]()
-
-
-📂 [Assignment-2]()
-
-
-📂 [Assignment-3]()
+📂  [Assignment-3](https://assignment-3-three-sigma.vercel.app/)
