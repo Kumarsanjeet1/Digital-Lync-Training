@@ -54,11 +54,20 @@ a{
     margin: 0 auto;
     width: 20%;
     text-align: center;
+    padding: 5px 0 10px 0;
+ }
+
+ .amz-Icon:after{
+    content: ".in";
+    /* font-family: math; */
+    position: relative;
+    bottom: 15px;
+    right: 10px;
  }
 
 
 .sign-in-card{
-    width: 25%;
+    width: 23%;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
@@ -66,7 +75,14 @@ a{
     padding: 25px;
     border: 1px solid #DDD;
     background-color: #fff;
-    border-radius: 5px ;
+    border-radius: 10px ;
+}
+
+.sign-in-card h1{
+    font-family: sans-serif;
+    font-weight: 100;
+    padding-bottom: 20px;
+
 }
 
 .form{
@@ -79,11 +95,19 @@ a{
     color: rgb(5, 96, 199);
 }
 
+a:hover{
+    color: #FD9A15;
+}
+
 #btn{
-    background-color: rgb(246, 246, 8);
+    background-color: #ffd414;
     border: none;
     border-radius: 5px;
     height: 25px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #F7CA00;
 }
 
 .form input{
@@ -104,7 +128,45 @@ a{
 }
 
 .new-amz{
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+}
+
+.new-amz p:before {
+    content: " ";
+    display: block;
+    background-color: #ddd;
+    height: 2px;
+    width: 35%;
+    position: relative;
+    top: 8px;
+    left: -6px;
+}
+
+.new-amz p:after{
+    content: " ";
+    display: block;
+    background-color: #ddd;
+    height: 2px;
+    width: 30%;
+    position: relative;
+    bottom: 10px;
+    left: 220px;
+}
+
+.create-new-acc button{
+    cursor: pointer;
+    border-radius: 5px;
+    height: 25px;
+    border-color: #DDD;
+    background-color: #fff;
+
+
+}
+
+.footer{
     display: flex;
     /* flex-direction: column; */
-    text-align: center;
+    
 }
