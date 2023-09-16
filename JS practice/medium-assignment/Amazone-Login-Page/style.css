@@ -124,9 +124,6 @@ label {
     height: 25px;
 }
 
-.form input:hover{
-    
-}
 
 .terms{
     font-size: 12px;
@@ -282,6 +279,42 @@ p#shop-on-amazon{
         font-size: 1.5em;
         font-weight: 500;
         padding-bottom: 10px;
+    }
+
+    .new-amz{
+        font-size: 14px;
+        color: gray;
+        text-align: center;
+       
+    }
+    
+    .new-amz p::before {
+        content: " ";
+        display: block;
+        background-color: #ddd;
+        height: 2px;
+        width: 85%;
+        position: relative;
+        top: 8px;
+        left: -100px;
+    }
+    
+    .new-amz p::after {
+        content: " ";
+        display: block;
+        background-color: #ddd;
+        height: 2px;
+        width: 85%;
+        position: relative;
+        bottom: 10px;
+        left: 110px;
+    }
+    .create-new-acc{
+        width: 30%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;  
     }
     
 
