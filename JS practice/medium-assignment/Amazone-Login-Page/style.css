@@ -162,6 +162,7 @@ p#shop-on-amazon{
     padding-bottom: 6px;
 }
 
+/* New to amazon section */
 .create-new-acc{
     width: 25%;
     max-width: 100%;
@@ -203,12 +204,12 @@ p#shop-on-amazon{
 .create-new-acc button{
     cursor: pointer;
     border-radius: 5px;
-    height: 30px;
+    height: 25px;
     border-color: #DDD;
     background-color: #fff;
 }
 
-
+/* Footer section */
 .footer {
     height: 120px;
     font-family: Arial,sans-serif;
@@ -281,6 +282,14 @@ p#shop-on-amazon{
         padding-bottom: 10px;
     }
 
+
+    .create-new-acc{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;  
+    }
     .new-amz{
         font-size: 14px;
         color: gray;
@@ -293,10 +302,10 @@ p#shop-on-amazon{
         display: block;
         background-color: #ddd;
         height: 1px;
-        width: 85%;
+        width: 30%;
         position: relative;
         top: 8px;
-        left: -100px;
+        left: px;
     }
     
     .new-amz p::after {
@@ -304,22 +313,11 @@ p#shop-on-amazon{
         display: block;
         background-color: #ddd;
         height: 1px;
-        width: 85%;
+        width: 30%;
         position: relative;
         bottom: 10px;
-        left: 110px;
+        left: 260px;
     }
-    .create-new-acc{
-        width: 30%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        padding: 25px;  
-    }
-    
-
-    
-    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
