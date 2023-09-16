@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+  
 }
 
 /* 
@@ -241,6 +242,61 @@ p#shop-on-amazon{
     padding-top: 20px;
 }
 
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+
+    .amz-logo{
+        width: 100px;
+    }
+
+    .amz-Icon{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .amz-Icon:after{
+        content: ".in";
+        position: relative;
+        bottom: 17px;
+        right: 10px;
+    }
+
+    .sign-in-card{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /* padding: 20px; */
+        border: 1px solid #DDD;
+        background-color: #fff;
+        border-radius: 10px ;
+    }
+
+    .sign-in-card h1{
+        font-family: Arial,sans-serif;
+        font-size: 1.5em;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+    
+
+    
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
 
 
 
