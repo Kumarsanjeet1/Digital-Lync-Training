@@ -1,17 +1,17 @@
 # 🔗 Assignment Preview Link ⬇️
 ## 📁 Easy Assignment-1
-📂  [Assignment-1](https://js-jssignment-1.vercel.app/)
+📂  [simple-bus-card](https://js-jssignment-1.vercel.app/)
 
-📂  [Assignment-2](https://assignment-2-seven-lime.vercel.app/)
+📂  [flipkart-mobile-card](https://assignment-2-seven-lime.vercel.app/)
 
-📂  [Assignment-3](https://assignment-3-three-sigma.vercel.app/)
+📂  [prime-movie-card](https://assignment-3-three-sigma.vercel.app/)
 
 ## 📁 Easy Assignment-2
 
-📂  [Assignment-1]()
+📂  [simple-calculator]()
 
 
-📂  [Assignment-2]()
+📂  [counter-APP]()
 
 
 📂 [Assignment-3]()
