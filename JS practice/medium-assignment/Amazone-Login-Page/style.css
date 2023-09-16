@@ -292,7 +292,7 @@ p#shop-on-amazon{
         content: " ";
         display: block;
         background-color: #ddd;
-        height: 2px;
+        height: 1px;
         width: 85%;
         position: relative;
         top: 8px;
@@ -303,7 +303,7 @@ p#shop-on-amazon{
         content: " ";
         display: block;
         background-color: #ddd;
-        height: 2px;
+        height: 1px;
         width: 85%;
         position: relative;
         bottom: 10px;
