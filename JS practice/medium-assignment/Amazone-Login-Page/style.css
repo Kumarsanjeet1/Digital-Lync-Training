@@ -190,15 +190,15 @@ p#shop-on-amazon{
     left: -6px;
 }
 
-.new-amz p::after{
+.new-amz p::after {
     content: " ";
     display: block;
     background-color: #ddd;
     height: 2px;
-    width: 30%;
+    width: 35%;
     position: relative;
-    bottom: 10px;
-    left: 220px;
+    bottom: 8px;
+    left: 229px;
 }
 
 .create-new-acc button{
@@ -321,13 +321,250 @@ p#shop-on-amazon{
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
+@media only screen and (min-width: 600px) {
+    .sign-in-card{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid #DDD;
+        background-color: #fff;
+        border-radius: 10px ;
+    }
+    .sign-in-card h1{
+        padding-bottom: 10px;
+    }
+
+    .form {
+        padding-bottom: 10px;       
+    }
+    .terms p{
+        padding-bottom:10px;
+    }
+
+    .new-amz p::before {
+        
+        width: 80%;
+        
+        left: -107px;
+    }
+    
+    .new-amz p::after {
+        left: 140px;
+        width: 80%;
+    }
+
+    .footer{
+        font-size: 15px;
+    }
+
+    
+
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
+@media only screen and (min-width: 767px) {
+    .amz-Icon{
+        width: 100%;
+        margin: 0 auto;
+        width: 20%;
+        text-align: center;
+        padding: 5px 0 10px 0;
+     }
+    
+     .amz-Icon:after{
+        content: ".in";
+        position: relative;
+        bottom: 15px;
+        right: 10px;
+     }
+    
+    
+    .sign-in-card{
+        width: 23%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        border: 1px solid #DDD;
+        background-color: #fff;
+        border-radius: 10px ;
+    }
+    
+    .sign-in-card h1{
+        font-family: Arial,sans-serif;
+        font-size: 1.7em;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: Arial,sans-serif;
+        padding-bottom: 20px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: rgb(5, 96, 199);
+    }
+    
+    a:hover{
+        color: #FD9A15;
+    }
+    
+    #btn{
+        background-color: #ffd414;
+        border: none;
+        border-radius: 5px;
+        height: 25px;
+        cursor: pointer;
+    }
+    
+    #btn:hover{
+        background-color: #F7CA00;
+    }
+    
+    label {
+        line-height: 9px;
+        padding: 5px 0;
+    }
+    
+    .form input{
+        height: 25px;
+    }
+    
+    
+    .terms{
+        font-size: 12px;
+        font-family: arial,sans-serif;
+        font-weight: 400;
+    }
+    
+    .terms p {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .need-help-bar{
+        margin-top: 20px;
+        height: 1px;
+        background-color:#DDD;
+        border: none;
+    }
+    
+    .need-help::before{
+        display: inline-block;
+        content: "";
+        border-top:4px solid transparent ;
+        border-left:4px solid #717070 ;
+        border-bottom:4px solid transparent ;
+        margin-right:5px ;
+    }
+    
+    p#buying-for-work {
+        font-weight: bold;
+        padding-bottom: 6px;
+    }
+    
+    p#shop-on-amazon{
+        font-weight: bold;
+        padding-bottom: 6px;
+    }
+    
+    /* New to amazon section */
+    .create-new-acc{
+        width: 25%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;  
+    }
+    
+    .new-amz{
+        font-size: 12px;
+        color: gray;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .new-amz p::before {
+        content: " ";
+        display: block;
+        background-color: #ddd;
+        height: 2px;
+        width: 35%;
+        position: relative;
+        top: 8px;
+        left: -6px;
+    }
+    
+    .new-amz p::after {
+        content: " ";
+        display: block;
+        background-color: #ddd;
+        height: 2px;
+        width: 35%;
+        position: relative;
+        bottom: 8px;
+        left: 229px;
+    }
+    
+    .create-new-acc button{
+        cursor: pointer;
+        border-radius: 5px;
+        height: 25px;
+        border-color: #DDD;
+        background-color: #fff;
+    }
+    
+    /* Footer section */
+    .footer {
+        height: 120px;
+        font-family: Arial,sans-serif;
+        font-size: 11px!important;
+        background-color: #eceaea58;
+        display: block;
+        text-align: center;
+    }
+    
+    .footer hr{
+        color: #acaaaa94;
+        height: 5px;
+        border: none;
+    }
+    
+    .Conditions{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        padding-top: 20px;
+    
+    }
+    .copyright{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    
+    
+
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
+@media only screen and (min-width: 1024px) {
+    .sign-in-card{
+        width: 30%;
+    }
+}
 
 
 
