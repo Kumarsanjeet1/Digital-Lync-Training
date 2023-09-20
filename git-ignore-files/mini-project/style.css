@@ -39,11 +39,11 @@
   touch-action: manipulation;
 }
 
-/* .btn:hover {
+.btn:hover {
   background-color: #FFC229;
   box-shadow: #FF6314 0 -6px 8px inset;
   transform: scale(1.125);
-} */
+}
 
 .btn:active {
   transform: scale(1.025);
