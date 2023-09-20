@@ -7,8 +7,9 @@
 .click-btn {
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 50%;
+    /* position: absolute;
+    top: 50%; */
+    
 }
 
 
@@ -40,9 +41,11 @@
 }
 
 .btn:hover {
-  background-color: #FFC229;
-  box-shadow: #FF6314 0 -6px 8px inset;
+  background-color: #70f3ff;
+  box-shadow: #077882 0 -6px 8px inset;
   transform: scale(1.125);
+  color: rgb(34, 53, 125);
+  transition: .4s;
 }
 
 .btn:active {
