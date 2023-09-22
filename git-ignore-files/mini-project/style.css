@@ -150,17 +150,18 @@
      }
 
      .cake-day-img{
-      padding: 0;
+      padding: 20px 0 20px 0;
       width: 100%;
       text-align: center;
       
      }
 
      .cake-day-img img{
-        height: 700px;
+        height: 550px;
         text-align: center;
-        margin-top: 10px;
-        padding: 10px;
+        /* margin-top: 10px; */
+        padding: 0;
+        
 
        
      }
