@@ -177,9 +177,36 @@ p#shop-on-amazon{
     color: gray;
     text-align: center;
     padding: 5px;
+    /* position: relative; */
 }
 
-.new-amz p::before {
+.new-amz p{
+    background-color: #fff;
+    z-index: 2;
+}
+
+.new-amz{
+    position: relative;
+}
+
+.new-amz::after{
+    content: "";
+    width: 100%;
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    border-top: 1px solid #e7e7e7;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    z-index: 1;
+}
+
+
+
+
+
+/* .new-amz p::before {
     content: " ";
     display: block;
     background-color: #ddd;
@@ -199,7 +226,7 @@ p#shop-on-amazon{
     position: relative;
     bottom: 8px;
     left: 229px;
-}
+} */
 
 .create-new-acc button{
     cursor: pointer;
@@ -490,10 +517,24 @@ p#shop-on-amazon{
         font-size: 12px;
         color: gray;
         text-align: center;
-        padding: 5px;
+        /* padding: 5px; */
     }
+
+    main{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    @media(max-width : 425px ){
+        main{
+            width: 98%;
+            margin: 0 auto;
+        }
+    }
+
     
-    .new-amz p::before {
+    
+    /* .new-amz p::before {
         content: " ";
         display: block;
         background-color: #ddd;
@@ -513,7 +554,7 @@ p#shop-on-amazon{
         position: relative;
         bottom: 8px;
         left: 179px;
-    }
+    } */
 
     .create-new-acc button{
         cursor: pointer;

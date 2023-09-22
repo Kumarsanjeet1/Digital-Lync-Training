@@ -3,17 +3,17 @@
     padding: 0;
 }
 
-
+/* 
 .click-btn {
     display: flex;
     justify-content: center;
-    /* position: absolute;
-    top: 50%; */
+    position: absolute;
+    top: 50%; 
     
 }
 
 
-/* CSS */
+/* CSS 
 .btn {
   appearance: none;
   background-color: #FFFFFF;
@@ -69,4 +69,99 @@
 
 
 }
+ */
 
+
+ /* ============================================================ */
+
+ 
+
+ .parent-section-1{
+  /* height: 100vh; */
+  background-color: #ECE4FD;
+
+ }
+
+ .section-1{
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:bisque;
+ }
+
+ .parent-cake-day-img{
+  /* height: 100vh; */
+  background-color: #ece4fdb5;
+ }
+
+
+ .cake-day-img{
+  height: 35em;
+  border: 1px solid  #d4cbe7;
+  border-radius: 20px;
+  padding: 2em; 
+  width: 25%;
+  margin: 0 auto;
+ }
+
+ .cake-day-img img{
+  height: 34em;
+  padding: 10px;
+   
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ==========Mobile Responsive============= */
+
+
+ @media (max-width: 768px) {
+    .parent-section-1{
+      width: 100%;
+      height: 100vh;
+      background-color: #ECE4FD;
+    
+    }
+
+    .section-1{
+      width: 80%;
+      font-size: 1.5em;
+    }
+
+
+    .parent-cake-day-img{
+    
+      
+     }
+
+     .cake-day-img{
+      padding: 0;
+        width: 100%;
+        text-align: center;
+        /* margin: 0 auto; */
+     }
+
+     .cake-day-img img{
+        height: 500px;
+        text-align: center;
+        margin-top: 10px;
+        padding: 20px;
+
+       
+     }
+ }
