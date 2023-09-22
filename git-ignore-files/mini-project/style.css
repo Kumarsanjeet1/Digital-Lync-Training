@@ -3,73 +3,28 @@
     padding: 0;
 }
 
-/* 
-.click-btn {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 50%; 
-    
-}
 
 
-/* CSS 
-.btn {
-  appearance: none;
-  background-color: #FFFFFF;
-  border-radius: 40em;
+
+/* CSS  */
+.lines {
+  border-radius: 10px;
   border-style: none;
-  box-shadow: #ADCFFF 0 -12px 6px inset;
-  box-sizing: border-box;
+  box-shadow: #ADCFFF 0 -8px 6px inset;
   color: #000000;
-  cursor: pointer;
-  display: inline-block;
   font-family: -apple-system,sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: -.24px;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.3rem;
-  quotes: auto;
   text-align: center;
-  text-decoration: none;
   transition: all .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  padding: 30px;
 }
 
-.btn:hover {
-  background-color: #70f3ff;
-  box-shadow: #077882 0 -6px 8px inset;
-  transform: scale(1.125);
-  color: rgb(34, 53, 125);
-  transition: .4s;
-}
-
-.btn:active {
-  transform: scale(1.025);
-}
-
-@media (max-width: 425px) {
-    
-    .btn {
-        font-size: 1.5rem;
-        padding: .75rem 2rem;
-    }
-
-    .click-btn {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 50%;
-        left: 20%;
-    }
 
 
-}
- */
+
+
 
 
  /* ============================================================ */
@@ -135,17 +90,28 @@
       width: 100%;
       height: 100vh;
       background-color: #ECE4FD;
-      font-family: 'Courier New';
+      font-family: 'Brush Script MT', cursive;
       font-weight: bold;
       color: #fff;
       
     }
 
-    .section-1{
+    .section-1 {
       width: 80%;
+      height: 70vh;
       font-size: 1.5em;
-      position: relative;
-      top: 25%;
+      background-color: #ECE4FD;
+      box-shadow: #ADCFFF 0 -8px 6px inset;
+    
+    }
+
+    .lines{
+      color: #fff;
+      background-color: rgb(111, 46, 215);
+      font-family: cursive;
+      font-weight: 100;
+      line-height: 50px;
+      line: clamp 10px; ;
     }
 
 
