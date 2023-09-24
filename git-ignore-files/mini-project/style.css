@@ -8,13 +8,14 @@
 
 /* CSS  */
 .lines {
+  height: 100vh;
   border-radius: 10px;
   border-style: none;
   box-shadow: #ADCFFF 0 -8px 6px inset;
-  color: #000000;
-  font-family: -apple-system,sans-serif;
+  background-color: rgb(111, 46, 215);
+  color: #fff;
+  font-family: cursive;
   font-size: 1.2rem;
-  font-weight: 700;
   letter-spacing: -.24px;
   text-align: center;
   transition: all .15s;
@@ -41,7 +42,8 @@
   width: 50%;
   margin: 0 auto;
   padding: 20px;
-  background-color:bisque;
+  background-color: #ECE4FD;
+     
  }
 
  .parent-cake-day-img{
@@ -114,10 +116,6 @@
       padding-bottom: 50px;
       height: 65vh;
       font-size: 5vw;
-      
-      
-      /* line-height: 20px; */
-
     }
 
 
@@ -137,7 +135,8 @@
         height: 550px;
         text-align: center;
         padding: 0;
-        /* padding-top: 25px; */
+        padding-top: 25px;
+        padding-bottom: 25px;
        
      }
  }
