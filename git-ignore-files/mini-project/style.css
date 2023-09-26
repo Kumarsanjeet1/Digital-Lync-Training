@@ -57,7 +57,8 @@
 
  .parent-cake-day-img{
   /* height: 100vh; */
-  background-color: #ece4fdb5;
+  /* color opacity changes */
+   background-color: #ece4fde0;  
  }
 
 
