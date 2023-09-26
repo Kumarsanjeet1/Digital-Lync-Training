@@ -170,14 +170,14 @@
      .cake-day-img img{
         height: 550px;
         text-align: center;
-        padding: 40px 0 5px 0;   /*  top 25 */
+        padding: 50px 0 5px 0;   /*  top 25 */
         
        
      }
      .cake-day-img video{
       height: 550px;
       text-align: center;
-      padding: 40px 0 5px 0;    /*  top 25 */
+      padding: 50px 0 5px 0;    /*  top 25 */
    }
 
    .footer{
