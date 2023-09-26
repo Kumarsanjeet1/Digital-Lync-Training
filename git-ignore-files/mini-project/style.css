@@ -83,7 +83,8 @@
 
 
  .footer{
-  width: 100%;
+  margin: 0 auto;
+  width: 99.5%;
   border: 1px solid  #46f5fe;
   color:#46f5fe ;
   background-color: rgb(111, 46, 215);
@@ -168,20 +169,21 @@
      .cake-day-img img{
         height: 550px;
         text-align: center;
-        padding: 25px 0 25px 0;
+        padding: 25px 0 5px 0;
         
        
      }
      .cake-day-img video{
       height: 550px;
       text-align: center;
-      padding: 25px 0 25px 0;
+      padding: 25px 0 5px 0;
       
      
    }
 
    .footer{
-    width: 100%;
+    margin: 0 auto;
+    width: 98%;
     border: 1px solid  #46f5fe;
     color:#46f5fe ;
     background-color: rgb(111, 46, 215);
