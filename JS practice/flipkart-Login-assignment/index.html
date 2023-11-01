@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart | Login</title>
+    <style>
+        /*  Blue Color Code: #2874F0, btn-OrangeColorCode: #2874F0*
+            border-radius: 2px;
+            height: 528px; max-width: 750px; min-width: 650px; 
+        */
+
+        body{
+            padding: 0;
+            margin: 0;
+            background-image:url(https://rukminim2.flixcart.com/fk-p-flap/3600/3600/image/65f7766d63d08b26.jpg?q=80);
+            background-repeat: no-repeat;
+            background-position: cover ;
+            font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+        }
+        
+        
+
+        
+
+        .login-card {
+            height: 480px;
+            min-width: 510px;
+            max-width: 610px;
+            margin: 6% auto;
+            display: flex;
+            border: none;
+            border-radius: 2px;
+            translate: 0% 5%;
+        }
+
+        
+
+        /* .login-card{
+            height: 480px;            
+            min-width: 500px;
+            max-width: 600px;
+            margin: 5% auto;
+            display: flex;
+            flex-direction: row; 
+            justify-content: center;
+            border: none;
+            border-radius: 2px;
+            align-items: center;
+            /* position: absolute;
+            top: 25%; */
+            /* left: 25%; */
+            /* translate: -50% 0%; 
+        } 
+        */
+
+        /* Left Setion Content Start*/
+        .Left-section{
+            width: 40%;
+            height: 100%;
+            background-color: #2874F0;
+            background-image: url(	https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png) ;
+            background-repeat: no-repeat;
+            background-position: center 85%;
+            
+        }
+        #login-logo{
+            color: #FFF;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 1.7;
+        }
+        span#loginParagraph {
+            font-size: 18px;
+            font-weight: 400;
+            /* font-family: inter_regular, fallback-inter_regular, Arial, sans-serif; */
+            color: #e0e0e0;
+            line-height: 27px;
+        }
+
+        .left-section-content{
+            padding: 40px 33px;
+            height: 85%;
+        }
+
+
+        /* Left Section Content End */
+
+/* ========================================================= */
+        /* Right Section Content start */
+        .right-section{
+            background-color: #FFFFFF;
+            width: 60%;
+            height: 100%;
+        }
+
+        /* Right Section Content End */
+        .login-form{
+            height: 400px;
+            padding: 60px 35px 16px 35px;
+            display: flex;
+            justify-content:space-between;
+            flex-direction: column;
+        }
+        a{
+            text-decoration: none;  
+            color: #58A2F6; 
+        }
+
+        #input {
+            width: 100%;
+            outline: none;
+            height: 20px;
+            border: none;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 17px;
+        }
+
+         #input:focus{
+            border-bottom: 1.8px solid #2874F0;
+            transition: linear .3s;
+        }
+        
+        button{
+            background-color: #FF5800;
+            border:none;
+            border-radius:2px;
+            width: 100%;
+            height: 43px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #FFF;
+            padding: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        label{
+          color:  #ACACAC;
+          font-size: 13px;
+          /* font-family: inter_regular, fallback-inter_regular, Arial, sans-serif; */
+        }
+
+        #terms{
+            color:  #ACACAC;
+            font-size: 12px;
+        }
+
+        .newToFlipkart{
+            text-align: center;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Login Card Code -->
+    
+        <div class="login-card">
+            <!-- Left-Section Card code -->
+            <div class="Left-section">
+                <div class="left-section-content">
+                    <span id="login-logo"></span>
+                    <br>
+                    <span id="loginParagraph"></span>                
+                </div>
+            </div>
+
+            <!-- Right-Section Card code -->
+            <div class="right-section">
+                <div class="login-form">
+                    <div >
+                        
+                        <label for="EMAIL NUMBER">ENTER EMAIL/MOBILE NUMBER</label>
+                        <input type="email" id="input" >
+                        <p id="terms">By continuing, you agree to Flipkart's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a> </p>
+                        <button onclick="validateEmailNumber()">Request OTP</button>
+                        
+                        
+                    </div>
+                    <div class="newToFlipkart">
+                        <a href="#">New to Flipkart? Create an account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+    <script>
+        var flipkartLogin = {
+            login: 'Login',
+            loginParagraph: 'Get access to your Orders, Wishlist and Recommendations'
+        }
+
+        document.getElementById('login-logo').innerHTML = flipkartLogin.login;
+        document.getElementById('loginParagraph').innerHTML = flipkartLogin.loginParagraph;
+    </script>
+</body>
+</html>
